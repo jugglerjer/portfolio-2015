@@ -1,0 +1,73 @@
+@import 'variables';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+$timeline-color-light: rgba(255,255,255,0.50);
+$timeline-color-dark: rgba(0,0,0,0.12);
+$timeline-left-area-width: 272px;
+
+section.dark {
+	.timeline-line { background-color: $timeline-color-light; }
+	.timeline-identifier:after { background-color: $timeline-color-light; }
+}
+
+section.light {
+	.timeline-line { background-color: $timeline-color-dark; }
+	.timeline-identifier:after { background-color: $timeline-color-dark; }
+}
+
+.timeline-line {
+	position: absolute;
+	top: 0;
+	left: $timeline-left-area-width;
+	width: 1px;
+	height: 100%;
+	background-color: $timeline-color-light
+}
+
+$timeline-spacing: $spacing * 8;
+
+.timeline-item {
+	@include display(flex);
+	padding: $section-spacing $section-spacing 0 $section-spacing;
+
+	&:last-child {
+		padding-bottom: $section-spacing;
+	}
+}
+
+.timeline-identifier {
+	box-sizing: border-box;
+	width: $timeline-left-area-width - $section-spacing;
+	padding-right: $timeline-spacing;
+	margin-right: $timeline-spacing;
+	text-align: right;
+	position: relative;
+}
+
+.timeline-item {
+	position: relative;
+}
+
+.timeline-identifier:after {
+	content: '';
+	position: absolute;
+  	right: $timeline-spacing -$spacing * 12;
+  	top: $spacing * 2;
+	width: $timeline-spacing;
+	height: 1px;
+	background-color: $timeline-color-light;
+}
+
+.timeline-identifier.partial-notch:after {
+	width: $timeline-spacing / 2;
+	right: $timeline-spacing -$spacing * 8;
+}
+
+.timeline-identifier.no-notch:after {
+	width: 0;
+}
+
+article {
+	// padding: $section-spacing;
+	padding-left: 0;
+}

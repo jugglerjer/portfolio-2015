@@ -1,0 +1,25 @@
+/* Colors */
+/* Spacing */
+body {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 100; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-weight: 100;
+  font-size: 28px; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

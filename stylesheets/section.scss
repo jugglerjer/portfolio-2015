@@ -1,0 +1,49 @@
+@import 'variables';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+$section-background-color: #fafafa;
+
+section {
+	@include display(flex);
+	position: relative;
+	background-color: $section-background-color;
+	overflow: hidden;
+}
+
+section.dark {
+	color: $text-color-light;
+}
+
+section.light {
+	color: $text-color-dark;
+}
+
+#intro {
+	background-color: $primary-color;
+}
+
+#capriza-intro {
+	height: 600px;
+	@include retina-image("../images/worksimple-app-table", contain, 'png', '@2x');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#capriza-designer {
+	height: 829px;
+	@include retina-image("../images/capriza-designer-devices", contain, 'png', '@2x');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+
+	p {
+		width: 408px;
+	}
+}
+
+#columns-intro {
+	background-color: #3E97BD;
+
+	img:first-child { margin-bottom: $spacing * 4; }
+	img:last-child { position: relative; top: $spacing; }
+	.timeline-item { padding-bottom: 0; }
+}
