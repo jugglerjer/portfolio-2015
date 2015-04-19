@@ -35,7 +35,7 @@ button {
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	font-size: 12px;
-	font-weight: 600;
+	font-weight: 400;
 	color: $primary-color;	
 
 	height: 32px;
@@ -55,5 +55,47 @@ button {
 
 	&:active {
 		background-color: rgba(0,0,0,0.04);
+	}
+}
+
+.button-full {
+	border: 1px solid $primary-color;
+	border-radius: 16px;
+
+	&:focus, &:active {
+		border: 1px solid $primary-color;
+	}
+
+	&:hover {
+		background-color: $primary-color;
+	}
+
+	&:active {
+		background-color: rgba(0,0,0,0.04);
+	}
+}
+
+.button-light {
+	border-color: $text-color-light;
+	color: $text-color-light;
+
+	&.button-full:hover {
+		background-color: $text-color-light;
+		color: $primary-color;
+	}
+	
+	&.button-full:focus, &.button-full:active {
+		border: 1px solid $text-color-light;
+	}
+
+}
+
+.button-large {
+	height: 48px;
+	line-height: 48px;
+
+
+	&.button-full {
+		border-radius: 24px;
 	}
 }

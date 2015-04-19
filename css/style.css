@@ -31,7 +31,7 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   color: #3c93d7;
   height: 32px;
   line-height: 32px;
@@ -44,3 +44,28 @@ button {
     background-color: rgba(0, 0, 0, 0.02); }
   button:active {
     background-color: rgba(0, 0, 0, 0.04); }
+
+.button-full {
+  border: 1px solid #3c93d7;
+  border-radius: 16px; }
+  .button-full:focus, .button-full:active {
+    border: 1px solid #3c93d7; }
+  .button-full:hover {
+    background-color: #3c93d7; }
+  .button-full:active {
+    background-color: rgba(0, 0, 0, 0.04); }
+
+.button-light {
+  border-color: white;
+  color: white; }
+  .button-light.button-full:hover {
+    background-color: white;
+    color: #3c93d7; }
+  .button-light.button-full:focus, .button-light.button-full:active {
+    border: 1px solid white; }
+
+.button-large {
+  height: 48px;
+  line-height: 48px; }
+  .button-large.button-full {
+    border-radius: 24px; }

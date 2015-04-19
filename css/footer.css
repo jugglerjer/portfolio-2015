@@ -15,6 +15,7 @@ footer {
   margin-left: 273px;
   padding: 32px;
   height: 100%;
+  cursor: pointer;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -68,6 +69,9 @@ footer {
   align-items: center;
   -ms-flex-align: center;
   margin-left: -57px; }
+  .contact-me-button button {
+    padding-left: 40px;
+    text-transform: lowercase; }
 
 .contact-me-button-circle {
   height: 48px;
@@ -76,7 +80,6 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  cursor: pointer;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -106,6 +109,8 @@ footer {
     background-color: #2679ba; }
   .contact-me-button-circle:active {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2); }
+  .contact-me-button-circle object {
+    cursor: pointer; }
 
 .twitter {
   display: block; }

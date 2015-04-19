@@ -38,8 +38,10 @@ footer.light {
   background-size: cover; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #capriza-intro {
-      background-image: url("@2x.png");
+      background-image: url("../images/worksimple-app-table@2x.png");
       background-size: contain; } }
+  #capriza-intro img {
+    margin-top: -8px; }
 
 #capriza-designer {
   height: 829px;
@@ -48,13 +50,15 @@ footer.light {
   background-position: bottom right; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #capriza-designer {
-      background-image: url("@2x.png");
+      background-image: url("../images/capriza-designer-devices@2x.png");
       background-size: contain; } }
   #capriza-designer p {
     width: 408px; }
 
 #columns-intro {
   background-color: #3e97bd; }
+  #columns-intro img:first-child {
+    margin-top: 4px; }
   #columns-intro img:last-child {
     margin: 0;
     position: relative;
@@ -82,7 +86,7 @@ footer.light {
   background-position-x: calc(100% - 8px * 4); }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #queue {
-      background-image: url("@2x.png");
+      background-image: url("../images/queue-screens@2x.png");
       background-size: contain; } }
   #queue h2 {
     margin-bottom: 32px; }
@@ -96,10 +100,11 @@ footer.light {
   background-position: bottom right; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #carma {
-      background-image: url("@2x.png");
+      background-image: url("../images/carma-screen@2x.png");
       background-size: contain; } }
   #carma img:first-child {
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    margin-top: 4px; }
   #carma p {
     width: 258px; }
   #carma .timeline-item {
@@ -117,7 +122,11 @@ footer.light {
   background-position-x: calc(100% - 8px * 16); }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #skills {
-      background-image: url("@2x.png");
+      background-image: url("../images/shoes@2x.png");
       background-size: contain; } }
   #skills p {
     width: 300px; }
+  #skills img:first-child {
+    margin-top: -9px; }
+  #skills img:last-child {
+    margin-top: 3px; }

@@ -21,6 +21,7 @@ footer {
 	margin-left: $timeline-left-area-width + 1;
 	padding: $spacing * 4;
 	height: 100%;
+	cursor: pointer;
 	// width: 100%;
 
 	@include display(flex);
@@ -34,6 +35,11 @@ footer {
 	@include align-items(center);
 
 	margin-left: -$spacing * 7 - 1;
+
+	button {
+		padding-left: $spacing * 5;
+		text-transform: lowercase;
+	}
 }
 
 .contact-me-button-circle {
@@ -43,7 +49,6 @@ footer {
 	border: 1px solid $divider-color-dark;
 	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.20);
 	border-radius: 50%;
-	cursor: pointer;
 
 	@include display(flex);
 	@include justify-content(center);
@@ -55,6 +60,10 @@ footer {
 
 	&:active {
 		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.20);
+	}
+
+	object {
+		cursor: pointer;
 	}
 }
 

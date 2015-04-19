@@ -34,14 +34,16 @@ footer.light {
 
 #capriza-intro {
 	height: 600px;
-	@include retina-image("../images/worksimple-app-table", contain, 'png', '@2x');
+	@include retina-image("../images/worksimple-app-table", contain, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	img { margin-top: -8px; }
 }
 
 #capriza-designer {
 	height: 829px;
-	@include retina-image("../images/capriza-designer-devices", contain, 'png', '@2x');
+	@include retina-image("../images/capriza-designer-devices", contain, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 
@@ -51,7 +53,8 @@ footer.light {
 $columns-color: #3E97BD;
 #columns-intro {
 	background-color: $columns-color;
-
+	
+	img:first-child { margin-top: 4px; }
 	img:last-child { margin: 0; position: relative; top: $spacing; }
 	.timeline-item { padding-bottom: 0; }
 }
@@ -68,7 +71,7 @@ $queue-color: #8DC2C3;
 #queue {
 	height: 600px;
 	background-color: $queue-color;
-	@include retina-image("../images/queue-screens", contain, 'png', '@2x');
+	@include retina-image("../images/queue-screens", contain, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 	@include calc(background-position-x, '100% - #{$spacing} * 4');
@@ -80,11 +83,11 @@ $queue-color: #8DC2C3;
 $carma-color: #5DA5C9;
 #carma {
 	background-color: fade-out( $carma-color, .8 );
-	@include retina-image("../images/carma-screen", contain, 'png', '@2x');
+	@include retina-image("../images/carma-screen", contain, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 
-	img:first-child { margin-bottom: $spacing * 4; }
+	img:first-child { margin-bottom: $spacing * 4; margin-top: 4px; }
 	p { width: 258px; }
 	.timeline-item { padding-bottom: 0; }
 }
@@ -95,10 +98,13 @@ $carma-color: #5DA5C9;
 
 #skills {
 	background-color: #555;
-	@include retina-image("../images/shoes", contain, 'png', '@2x');
+	@include retina-image("../images/shoes", contain, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position-y: center;
 	@include calc(background-position-x, '100% - #{$spacing} * 16');
 	p { width: 300px; }
+
+	img:first-child { margin-top: -9px; }
+	img:last-child { margin-top: 3px; }
 }
 
