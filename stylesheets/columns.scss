@@ -14,7 +14,7 @@ $upload-copy-spacing: $spacing * 9;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	// background-size: contain;
-	@include retina-image(/images/iphone_6_frame, auto, 'png', null, '@2x');
+	@include retina-image(/images/iphone_6_frame, 50%, 'png', null, '@2x');
 }
 
 $upload-preview-screen-spacing: 24px;
