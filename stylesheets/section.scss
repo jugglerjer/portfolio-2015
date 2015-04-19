@@ -36,7 +36,7 @@ footer.light {
 	height: 600px;
 	@include retina-image("../images/worksimple-app-table", cover, 'png', null, '@2x');
 	background-repeat: no-repeat;
-	// background-size: cover;
+	background-size: cover;
 
 	img { margin-top: -8px; }
 }
@@ -86,6 +86,7 @@ $carma-color: #5DA5C9;
 	@include retina-image("../images/carma-screen", 579px 339px, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
+	padding-bottom: $spacing * 4;
 
 	img:first-child { margin-bottom: $spacing * 4; margin-top: 4px; }
 	p { width: 258px; }
