@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>contact-me</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Portfolio" sketch:type="MSLayerGroup" transform="translate(-260.000000, -5615.000000)" fill="#FFFFFF">
+            <g id="Footer" transform="translate(0.000000, 5513.000000)" sketch:type="MSShapeGroup">
+                <path d="M261.384485,114.499714 C260.510773,113.217662 260,111.66848 260,110 C260,105.581722 263.581722,102 268,102 C272.418278,102 276,105.581722 276,110 C276,114.418278 272.418278,118 268,118 C266.328636,118 264.776982,117.48746 263.49364,116.610981 L260,118 L261.384485,114.499714 Z" id="contact-me"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,13 +1,13 @@
 /* Colors */
 /* Spacing */
-section.dark .timeline-line {
+.dark .timeline-line {
   background-color: rgba(255, 255, 255, 0.5); }
-section.dark .timeline-identifier:after {
+.dark .timeline-identifier:after {
   background-color: rgba(255, 255, 255, 0.5); }
 
-section.light .timeline-line {
+.light .timeline-line {
   background-color: rgba(0, 0, 0, 0.12); }
-section.light .timeline-identifier:after {
+.light .timeline-identifier:after {
   background-color: rgba(0, 0, 0, 0.12); }
 
 .timeline-line {
@@ -16,7 +16,8 @@ section.light .timeline-identifier:after {
   left: 272px;
   width: 1px;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 0; }
 
 .timeline-item {
   display: -webkit-box;
@@ -32,11 +33,16 @@ section.light .timeline-identifier:after {
 
 .timeline-identifier {
   box-sizing: border-box;
-  width: 200px;
+  min-width: 200px;
   padding-right: 64px;
   margin-right: 64px;
   text-align: right;
   position: relative; }
+  .timeline-identifier > span {
+    display: inline-block;
+    margin-top: 4px; }
+  .timeline-identifier > object {
+    margin-top: 8px; }
 
 .timeline-item {
   position: relative; }
@@ -59,5 +65,3 @@ section.light .timeline-identifier:after {
 
 article {
   padding-left: 0; }
-
-/*# sourceMappingURL=timeline.css.map */

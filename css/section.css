@@ -11,15 +11,25 @@ section {
   position: relative;
   background-color: #fafafa;
   overflow: hidden; }
+  section img {
+    margin-bottom: 32px; }
+  section > * {
+    z-index: 1; }
 
-section.dark {
-  color: #ffffff; }
+section.dark,
+footer.dark {
+  color: white; }
 
-section.light {
+section.light,
+footer.light {
   color: #555555; }
+  section.light p, section.light span,
+  footer.light p,
+  footer.light span {
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif; }
 
 #intro {
-  background-color: #3C93D7; }
+  background-color: #3c93d7; }
 
 #capriza-intro {
   height: 600px;
@@ -44,13 +54,70 @@ section.light {
     width: 408px; }
 
 #columns-intro {
-  background-color: #3E97BD; }
-  #columns-intro img:first-child {
-    margin-bottom: 32px; }
+  background-color: #3e97bd; }
   #columns-intro img:last-child {
+    margin: 0;
     position: relative;
     top: 8px; }
   #columns-intro .timeline-item {
     padding-bottom: 0; }
 
-/*# sourceMappingURL=section.css.map */
+#columns-detail {
+  height: 829px; }
+  #columns-detail .timeline-item {
+    margin-top: 112px; }
+  #columns-detail a {
+    color: #3e97bd;
+    text-decoration: none; }
+  #columns-detail p {
+    width: 323px; }
+
+#queue {
+  height: 600px;
+  background-color: #8dc2c3;
+  background-image: url("../images/queue-screens.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: -webkit-calc(100% - 8px * 4);
+  background-position-x: calc(100% - 8px * 4); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #queue {
+      background-image: url("@2x.png");
+      background-size: contain; } }
+  #queue h2 {
+    margin-bottom: 32px; }
+  #queue p {
+    width: 258px; }
+
+#carma {
+  background-color: rgba(93, 165, 201, 0.2);
+  background-image: url("../images/carma-screen.png");
+  background-repeat: no-repeat;
+  background-position: bottom right; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #carma {
+      background-image: url("@2x.png");
+      background-size: contain; } }
+  #carma img:first-child {
+    margin-bottom: 32px; }
+  #carma p {
+    width: 258px; }
+  #carma .timeline-item {
+    padding-bottom: 0; }
+
+#previous-experience p {
+  width: 300px; }
+
+#skills {
+  background-color: #555;
+  background-image: url("../images/shoes.png");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: -webkit-calc(100% - 8px * 16);
+  background-position-x: calc(100% - 8px * 16); }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+    #skills {
+      background-image: url("@2x.png");
+      background-size: contain; } }
+  #skills p {
+    width: 300px; }

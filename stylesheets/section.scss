@@ -1,21 +1,31 @@
 @import 'variables';
 @import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 
-$section-background-color: #fafafa;
-
 section {
 	@include display(flex);
 	position: relative;
 	background-color: $section-background-color;
 	overflow: hidden;
+
+	img { margin-bottom: $spacing * 4; }
+
+	& > * {
+		z-index: 1;
+	}
 }
 
-section.dark {
+section.dark,
+footer.dark {
 	color: $text-color-light;
 }
 
-section.light {
+section.light,
+footer.light {
 	color: $text-color-dark;
+
+	p, span {
+		font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
+	}
 }
 
 #intro {
@@ -35,15 +45,60 @@ section.light {
 	background-repeat: no-repeat;
 	background-position: bottom right;
 
-	p {
-		width: 408px;
-	}
+	p { width: 408px; }
 }
-
+	
+$columns-color: #3E97BD;
 #columns-intro {
-	background-color: #3E97BD;
+	background-color: $columns-color;
 
-	img:first-child { margin-bottom: $spacing * 4; }
-	img:last-child { position: relative; top: $spacing; }
+	img:last-child { margin: 0; position: relative; top: $spacing; }
 	.timeline-item { padding-bottom: 0; }
 }
+
+#columns-detail {
+	height: 829px;
+
+	.timeline-item { margin-top: 112px; }
+	a { color: $columns-color; text-decoration: none;}
+	p { width: 323px; }
+}
+
+$queue-color: #8DC2C3;
+#queue {
+	height: 600px;
+	background-color: $queue-color;
+	@include retina-image("../images/queue-screens", contain, 'png', '@2x');
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+	@include calc(background-position-x, '100% - #{$spacing} * 4');
+
+	h2 { margin-bottom: $spacing * 4; }
+	p { width: 258px; }
+}
+
+$carma-color: #5DA5C9;
+#carma {
+	background-color: fade-out( $carma-color, .8 );
+	@include retina-image("../images/carma-screen", contain, 'png', '@2x');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+
+	img:first-child { margin-bottom: $spacing * 4; }
+	p { width: 258px; }
+	.timeline-item { padding-bottom: 0; }
+}
+
+#previous-experience {
+	p { width: 300px; }
+}
+
+#skills {
+	background-color: #555;
+	@include retina-image("../images/shoes", contain, 'png', '@2x');
+	background-repeat: no-repeat;
+	background-position-y: center;
+	@include calc(background-position-x, '100% - #{$spacing} * 16');
+	p { width: 300px; }
+}
+

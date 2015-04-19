@@ -3,14 +3,13 @@
 
 $timeline-color-light: rgba(255,255,255,0.50);
 $timeline-color-dark: rgba(0,0,0,0.12);
-$timeline-left-area-width: 272px;
 
-section.dark {
+.dark {
 	.timeline-line { background-color: $timeline-color-light; }
 	.timeline-identifier:after { background-color: $timeline-color-light; }
 }
 
-section.light {
+.light {
 	.timeline-line { background-color: $timeline-color-dark; }
 	.timeline-identifier:after { background-color: $timeline-color-dark; }
 }
@@ -21,7 +20,8 @@ section.light {
 	left: $timeline-left-area-width;
 	width: 1px;
 	height: 100%;
-	background-color: $timeline-color-light
+	background-color: $timeline-color-light;
+	z-index: 0;
 }
 
 $timeline-spacing: $spacing * 8;
@@ -37,11 +37,20 @@ $timeline-spacing: $spacing * 8;
 
 .timeline-identifier {
 	box-sizing: border-box;
-	width: $timeline-left-area-width - $section-spacing;
+	min-width: $timeline-left-area-width - $section-spacing;
 	padding-right: $timeline-spacing;
 	margin-right: $timeline-spacing;
 	text-align: right;
 	position: relative;
+
+	& > span {
+		display: inline-block;
+		margin-top: $spacing / 2;
+	}
+
+	& > object {
+		margin-top: $spacing;
+	}
 }
 
 .timeline-item {
