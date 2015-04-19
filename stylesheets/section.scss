@@ -34,7 +34,7 @@ footer.light {
 
 #capriza-intro {
 	height: 600px;
-	@include retina-image("../images/worksimple-app-table", contain, 'png', null, '@2x');
+	@include retina-image("../images/worksimple-app-table", auto, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -43,7 +43,7 @@ footer.light {
 
 #capriza-designer {
 	height: 829px;
-	@include retina-image("../images/capriza-designer-devices", contain, 'png', null, '@2x');
+	@include retina-image("../images/capriza-designer-devices", auto, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 
@@ -71,7 +71,7 @@ $queue-color: #8DC2C3;
 #queue {
 	height: 600px;
 	background-color: $queue-color;
-	@include retina-image("../images/queue-screens", contain, 'png', null, '@2x');
+	@include retina-image("../images/queue-screens", auto, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 	@include calc(background-position-x, '100% - #{$spacing} * 4');
@@ -83,7 +83,7 @@ $queue-color: #8DC2C3;
 $carma-color: #5DA5C9;
 #carma {
 	background-color: fade-out( $carma-color, .8 );
-	@include retina-image("../images/carma-screen", contain, 'png', null, '@2x');
+	@include retina-image("../images/carma-screen", auto, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
 
@@ -98,7 +98,7 @@ $carma-color: #5DA5C9;
 
 #skills {
 	background-color: #555;
-	@include retina-image("../images/shoes", contain, 'png', null, '@2x');
+	@include retina-image("../images/shoes", auto, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position-y: center;
 	@include calc(background-position-x, '100% - #{$spacing} * 16');
