@@ -10,11 +10,11 @@ $upload-copy-spacing: $spacing * 9;
 	@include calc(height, '100% - #{$upload-copy-spacing}');
 	max-height: 879px;
 	width: 432px;
-	background-image: url("/images/iphone_6_frame@2x.png");
+	background-image: url("/images/iphone_6_frame.png");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	// background-size: contain;
-	@include retina-image(/images/iphone_6_frame, 50%, 'png', null, '@2x');
+	@include retina-image(/images/iphone_6_frame, auto, 'png', null, '@2x');
 }
 
 $upload-preview-screen-spacing: 24px;
