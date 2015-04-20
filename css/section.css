@@ -14,6 +14,7 @@ section {
   section img {
     margin-bottom: 32px; }
   section > * {
+    position: relative;
     z-index: 1; }
 
 section.dark,
@@ -30,12 +31,16 @@ footer.light {
 
 #intro {
   background-color: #3c93d7; }
+  #intro .timeline-item:last-child {
+    padding-top: 0; }
 
 #capriza-intro {
   height: 600px;
   background-image: url("../images/worksimple-app-table.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  background-color: #3a3a3a; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #capriza-intro {
       background-image: url("../images/worksimple-app-table@2x.png");
@@ -74,7 +79,11 @@ footer.light {
     color: #3e97bd;
     text-decoration: none; }
   #columns-detail p {
-    width: 323px; }
+    max-width: 323px; }
+  #columns-detail .upload-preview-mobile {
+    display: none;
+    background: none;
+    margin-top: 32px; }
 
 #queue {
   height: 600px;
@@ -98,6 +107,9 @@ footer.light {
   background-image: url("../images/carma-screen.png");
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-position-y: bottom;
+  background-position-x: -webkit-calc(100% + 1px);
+  background-position-x: calc(100% + 1px);
   padding-bottom: 32px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #carma {
@@ -131,3 +143,114 @@ footer.light {
     margin-top: -9px; }
   #skills img:last-child {
     margin-top: 3px; }
+
+@media only screen and (max-device-width: 1023px) {
+  #carma {
+    padding-bottom: 339px;
+    background-position-x: 64px; }
+    #carma p {
+      margin-bottom: 32px;
+      width: auto;
+      max-width: 540px; } }
+@media only screen and (max-device-width: 980px) {
+  #capriza-designer {
+    height: auto;
+    padding-bottom: 758px; }
+    #capriza-designer p {
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 540px; }
+
+  #queue {
+    height: auto;
+    padding-bottom: 523px;
+    background-position-x: 64px; }
+    #queue p {
+      margin-bottom: 32px;
+      width: 100%;
+      max-width: 540px; }
+
+  #columns-detail {
+    height: auto;
+    padding-bottom: 753px; }
+    #columns-detail .timeline-item {
+      margin-top: 0; }
+    #columns-detail .upload-preview {
+      right: auto;
+      top: auto;
+      bottom: -144px;
+      left: 64px; }
+
+  #previous-experience p {
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 540px; } }
+@media only screen and (max-device-width: 736px) {
+  #capriza-intro img {
+    height: 32px; }
+
+  #capriza-designer {
+    background-size: -webkit-calc(100% - 8px * 2);
+    background-size: calc(100% - 8px * 2);
+    padding-bottom: -webkit-calc(100% - 8px * 4);
+    padding-bottom: calc(100% - 8px * 4); }
+    #capriza-designer .timeline-item {
+      padding-bottom: 0px; }
+
+  #columns-intro {
+    background-image: url("../images/columns-designer.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: -webkit-calc(100% - 8px * 2);
+    background-size: calc(100% - 8px * 2);
+    padding-bottom: -webkit-calc(100% - 8px * 12);
+    padding-bottom: calc(100% - 8px * 12); }
+    #columns-intro img:first-child {
+      height: 20px; }
+    #columns-intro img:last-child {
+      display: none; }
+    #columns-intro .timeline-item {
+      padding-bottom: 0px; } }
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-device-width: 736px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-device-width: 736px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-device-width: 736px) and (min-resolution: 125dpi), only screen and (max-device-width: 736px) and (min-resolution: 1.3dppx) {
+    #columns-intro {
+      background-image: url("../images/columns-designer@2x.png"); } }
+
+@media only screen and (max-device-width: 736px) {
+  #columns-detail {
+    background: none;
+    padding-bottom: 0; }
+    #columns-detail .upload-preview-mobile {
+      display: block; }
+    #columns-detail .upload-preview {
+      display: none; }
+
+  #queue {
+    background-position: bottom center;
+    background-size: -webkit-calc(100% - 8px * 2);
+    background-size: calc(100% - 8px * 2);
+    padding-bottom: -webkit-calc(100% - 8px * 4);
+    padding-bottom: calc(100% - 8px * 4); }
+    #queue .timeline-item {
+      padding-bottom: 0px; }
+
+  #carma {
+    background-position: bottom center;
+    background-size: -webkit-calc(100% - 8px * 2);
+    background-size: calc(100% - 8px * 2);
+    padding-bottom: -webkit-calc(100% - 8px * 12);
+    padding-bottom: calc(100% - 8px * 12); }
+    #carma .timeline-item {
+      padding-bottom: 0px; }
+
+  #skills {
+    background-position: bottom center;
+    background-position-x: -webkit-calc(100% - 8px * 4);
+    background-position-x: calc(100% - 8px * 4);
+    background-position-y: -webkit-calc(100% - 8px * 4);
+    background-position-y: calc(100% - 8px * 4);
+    background-size: -webkit-calc(224px);
+    background-size: calc(224px);
+    padding-bottom: -webkit-calc(60%);
+    padding-bottom: calc(60%); }
+    #skills .timeline-item {
+      padding-bottom: 0px; } }

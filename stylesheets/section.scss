@@ -10,6 +10,7 @@ section {
 	img { margin-bottom: $spacing * 4; }
 
 	& > * {
+		position: relative;
 		z-index: 1;
 	}
 }
@@ -30,6 +31,10 @@ footer.light {
 
 #intro {
 	background-color: $primary-color;
+
+	.timeline-item:last-child {
+		padding-top:0;
+	}
 }
 
 #capriza-intro {
@@ -37,6 +42,9 @@ footer.light {
 	@include retina-image("../images/worksimple-app-table", cover, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+
+	background-color: #3a3a3a;
 
 	img { margin-top: -8px; }
 }
@@ -64,7 +72,15 @@ $columns-color: #3E97BD;
 
 	.timeline-item { margin-top: 112px; }
 	a { color: $columns-color; text-decoration: none;}
-	p { width: 323px; }
+	p {
+		max-width: 323px;
+	}
+
+	.upload-preview-mobile {
+		display: none;
+		background: none;
+		margin-top: $spacing * 4;
+	}
 }
 
 $queue-color: #8DC2C3;
@@ -86,6 +102,8 @@ $carma-color: #5DA5C9;
 	@include retina-image("../images/carma-screen", 579px 339px, 'png', null, '@2x');
 	background-repeat: no-repeat;
 	background-position: bottom right;
+	background-position-y: bottom;
+	@include calc(background-position-x, '100% + 1px');
 	padding-bottom: $spacing * 4;
 
 	img:first-child { margin-bottom: $spacing * 4; margin-top: 4px; }
@@ -107,5 +125,114 @@ $carma-color: #5DA5C9;
 
 	img:first-child { margin-top: -9px; }
 	img:last-child { margin-top: 3px; }
+}
+
+@media only screen and (max-device-width: 1023px) {
+	#carma {
+		p { margin-bottom: $spacing * 4; width: auto; max-width: 540px;}
+		padding-bottom: 339px;
+		background-position-x: $spacing * 8;
+		// @include calc(background-position-x, '100% - #{$spacing} * 16');
+	}
+}
+
+@media only screen and (max-device-width: 980px) {
+
+	#capriza-designer {
+		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
+		height: auto;
+		padding-bottom: 758px;
+	}
+
+	#queue {
+		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
+		height: auto;
+		padding-bottom: 523px;
+		background-position-x: $spacing * 8;
+	}
+
+	#columns-detail {
+		height: auto;
+		padding-bottom: 753px;
+
+		.timeline-item {
+			margin-top: 0;
+		}
+
+		.upload-preview {
+			right: auto;
+			top: auto;
+			bottom: -$section-spacing * 2;
+			left: $spacing * 8;
+		}
+	}
+
+	#previous-experience {
+		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
+	}
+}
+
+@media only screen and (max-device-width: 736px) {
+
+	#capriza-intro {
+		img { height: 32px; }
+	}
+	
+	#capriza-designer {
+		.timeline-item { padding-bottom: 0px; }
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 4');
+	}
+
+	#columns-intro {
+		img:first-child { height: 20px; }
+		img:last-child {
+			display: none;
+		}
+		
+		.timeline-item { padding-bottom: 0px; }
+
+		@include retina-image("../images/columns-designer", null, 'png', null, '@2x');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 12');
+	}
+
+	#columns-detail {
+		.upload-preview-mobile {
+			display: block;
+		}
+
+		.upload-preview {
+			display: none;
+		}
+
+		background: none;
+		padding-bottom: 0;
+	}
+
+	#queue {
+		.timeline-item { padding-bottom: 0px; }
+		background-position: bottom center;
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 4');
+	}
+
+	#carma {
+		.timeline-item { padding-bottom: 0px; }
+		background-position: bottom center;
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 12');
+	}
+
+	#skills {
+		.timeline-item { padding-bottom: 0px; }
+		background-position: bottom center;
+		@include calc(background-position-x, '100% - #{$spacing} * 4');
+		@include calc(background-position-y, '100% - #{$spacing} * 4');
+		@include calc(background-size, '224px');
+		@include calc(padding-bottom, '60%');
+	}
 }
 

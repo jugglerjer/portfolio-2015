@@ -28,7 +28,7 @@ $timeline-spacing: $spacing * 8;
 
 .timeline-item {
 	@include display(flex);
-	padding: $section-spacing $section-spacing 0 $section-spacing;
+	padding: $section-spacing $section-spacing/2 0 $section-spacing;
 
 	&:last-child {
 		padding-bottom: $section-spacing;
@@ -79,4 +79,44 @@ $timeline-spacing: $spacing * 8;
 article {
 	// padding: $section-spacing;
 	padding-left: 0;
+}
+
+@media only screen and (max-device-width: 1200px) {
+
+	$timeline-spacing-mobile: $spacing * 4;
+	.timeline-line {
+		left: $timeline-spacing-mobile;
+	}
+
+	.timeline-item {
+		@include flex-direction(column);
+	}
+
+	.timeline-identifier {
+		text-align: left;
+		margin-bottom: $spacing * 4;
+
+		&:after {
+			width: $spacing * 4;;
+			right: auto;
+			left: -$spacing * 7;
+		}
+	}
+}
+
+@media only screen and (max-device-width: 736px) {
+	
+	#intro {
+		.timeline-line {
+			height: 100%;
+		}
+	}
+
+	.timeline-line {
+		height: $spacing * 13;
+	}
+
+	.timeline-identifier {
+		font-size: 14px;
+	}
 }

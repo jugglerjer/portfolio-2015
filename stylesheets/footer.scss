@@ -34,9 +34,11 @@ footer {
 	@include justify-content(center);
 	@include align-items(center);
 
+	text-decoration: none;
+
 	margin-left: -$spacing * 7 - 1;
 
-	button {
+	.button {
 		padding-left: $spacing * 5;
 		text-transform: lowercase;
 	}
@@ -75,4 +77,33 @@ footer {
 .copyright {
 	opacity: 0.4;
 	font-size: 12px;
+}
+
+@media only screen and (max-device-width: 1200px) {
+	.footer-content-area {
+		margin-left: $timeline-left-area-width-mobile + 1;
+	}
+}
+
+@media only screen and (max-device-width: 736px) {
+	footer {
+		.timeline-line {
+			display: none;
+		}
+	}
+
+	.footer-content-area {
+		
+		.contact-me-button-circle {
+			display: none;
+		}
+		
+		.contact-me-button {
+			margin-left: 0;
+		}
+
+		margin-left: 0;
+		@include flex-direction(column);
+		@include align-items(center);
+	}
 }

@@ -1,5 +1,8 @@
 /* Colors */
 /* Spacing */
+.upload-preview.mobile {
+  display: none; }
+
 .upload-preview {
   position: absolute;
   right: 72px;

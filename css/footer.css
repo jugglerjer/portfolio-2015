@@ -68,8 +68,9 @@ footer {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
+  text-decoration: none;
   margin-left: -57px; }
-  .contact-me-button button {
+  .contact-me-button .button {
     padding-left: 40px;
     text-transform: lowercase; }
 
@@ -118,3 +119,36 @@ footer {
 .copyright {
   opacity: 0.4;
   font-size: 12px; }
+
+@media only screen and (max-device-width: 1200px) {
+  .footer-content-area {
+    margin-left: 33px; } }
+@media only screen and (max-device-width: 736px) {
+  footer .timeline-line {
+    display: none; }
+
+  .footer-content-area {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center; }
+    .footer-content-area .contact-me-button-circle {
+      display: none; }
+    .footer-content-area .contact-me-button {
+      margin-left: 0; } }

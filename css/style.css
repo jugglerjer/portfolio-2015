@@ -21,7 +21,7 @@ p {
   margin-bottom: 0;
   font-size: 16px; }
 
-button {
+button.button, a.button {
   appearance: none;
   -webkit-appearance: none;
   background: none;
@@ -29,6 +29,7 @@ button {
   outline: none;
   cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.5px;
   font-size: 12px;
   font-weight: 400;
@@ -37,12 +38,12 @@ button {
   line-height: 32px;
   border-radius: 2px;
   padding: 0 32px; }
-  button:focus, button:active {
+  button.button:focus, button.button:active, a.button:focus, a.button:active {
     border: none;
     outline: none; }
-  button:hover {
+  button.button:hover, a.button:hover {
     background-color: rgba(0, 0, 0, 0.02); }
-  button:active {
+  button.button:active, a.button:active {
     background-color: rgba(0, 0, 0, 0.04); }
 
 .button-full {
@@ -69,3 +70,8 @@ button {
   line-height: 48px; }
   .button-large.button-full {
     border-radius: 24px; }
+
+@media only screen and (max-device-width: 736px) {
+  h2 {
+    font-size: 18px;
+    margin-bottom: 32px; } }

@@ -3,6 +3,8 @@
 
 $upload-copy-spacing: $spacing * 9;
 
+.upload-preview.mobile {display: none;}
+
 .upload-preview {
 	position: absolute;
 	right: $upload-copy-spacing;
