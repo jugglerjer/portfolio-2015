@@ -72,6 +72,9 @@ button.button, a.button {
     border-radius: 24px; }
 
 @media only screen and (max-device-width: 736px) {
+  body {
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif; }
+
   h2 {
     font-size: 18px;
     margin-bottom: 32px; } }

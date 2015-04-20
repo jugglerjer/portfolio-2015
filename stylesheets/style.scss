@@ -102,6 +102,11 @@ button.button, a.button {
 }
 
 @media only screen and (max-device-width: 736px) {
+
+	body {
+		font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
+	}
+
 	h2 {
 		font-size: 18px;
 		margin-bottom: 32px;
