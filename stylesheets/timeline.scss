@@ -118,5 +118,10 @@ article {
 
 	.timeline-identifier {
 		font-size: 14px;
+
+		& > span {
+			display: inline-block;
+			margin-top: $spacing;
+		}
 	}
 }

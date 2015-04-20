@@ -82,8 +82,7 @@ footer.light {
     max-width: 323px; }
   #columns-detail .upload-preview-mobile {
     display: none;
-    background: none;
-    margin-top: 32px; }
+    background: none; }
 
 #queue {
   height: 600px;
