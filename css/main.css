@@ -165,7 +165,7 @@ footer.light {
     background: none; }
 
 #queue {
-  height: 600px;
+  height: 657px;
   background-color: #8dc2c3;
   background-image: url("../images/queue-screens.png");
   background-repeat: no-repeat;
@@ -175,11 +175,22 @@ footer.light {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #queue {
       background-image: url("../images/queue-screens@2x.png");
-      background-size: 540px 523px; } }
+      background-size: 540px 579px; } }
   #queue h2 {
     margin-bottom: 32px; }
   #queue p {
     width: 258px; }
+  #queue .video-container {
+    position: absolute;
+    bottom: 0px;
+    right: 54px;
+    height: 499px;
+    width: 281px;
+    overflow: hidden; }
+    #queue .video-container video {
+      position: relative;
+      left: -303px;
+      height: 100%; }
 
 #carma {
   background-color: rgba(93, 165, 201, 0.2);
@@ -242,12 +253,14 @@ footer.light {
 
   #queue {
     height: auto;
-    padding-bottom: 523px;
+    padding-bottom: 579px;
     background-position-x: 64px; }
     #queue p {
       margin-bottom: 32px;
       width: 100%;
       max-width: 540px; }
+    #queue .video-container {
+      left: 301px; }
 
   #columns-detail {
     height: auto;
@@ -311,6 +324,8 @@ footer.light {
     padding-bottom: calc(100% - 8px * 4); }
     #queue .timeline-item {
       padding-bottom: 0px; }
+    #queue .video-container {
+      display: none; }
 
   #carma {
     background-position: bottom center;
