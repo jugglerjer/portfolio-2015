@@ -79,13 +79,13 @@ footer {
 	font-size: 12px;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 	.footer-content-area {
 		margin-left: $timeline-left-area-width-mobile + 1;
 	}
 }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
 	footer {
 		.timeline-line {
 			display: none;

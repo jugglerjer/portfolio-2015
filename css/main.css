@@ -71,7 +71,7 @@ button.button, a.button {
   .button-large.button-full {
     border-radius: 24px; }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
   body {
     font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif; }
 
@@ -167,11 +167,11 @@ footer.light {
 #queue {
   height: 657px;
   background-color: #8dc2c3;
+  background-position: right bottom;
+  background-origin: content-box;
+  padding-right: 32px;
   background-image: url("../images/queue-screens.png");
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: -webkit-calc(100% - 8px * 4);
-  background-position-x: calc(100% - 8px * 4); }
+  background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #queue {
       background-image: url("../images/queue-screens@2x.png");
@@ -218,11 +218,11 @@ footer.light {
 
 #skills {
   background-color: #555;
+  background-position: right center;
+  background-origin: content-box;
+  padding-right: 128px;
   background-image: url("../images/shoes.png");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: -webkit-calc(100% - 8px * 16);
-  background-position-x: calc(100% - 8px * 16); }
+  background-repeat: no-repeat; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     #skills {
       background-image: url("../images/shoes@2x.png");
@@ -234,7 +234,7 @@ footer.light {
   #skills img:last-child {
     margin-top: 3px; }
 
-@media only screen and (max-device-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   #carma {
     padding-bottom: 339px;
     background-position-x: 64px; }
@@ -242,7 +242,7 @@ footer.light {
       margin-bottom: 32px;
       width: auto;
       max-width: 540px; } }
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
   #capriza-designer {
     height: auto;
     padding-bottom: 758px; }
@@ -254,7 +254,8 @@ footer.light {
   #queue {
     height: auto;
     padding-bottom: 579px;
-    background-position-x: 64px; }
+    background-position-x: 64px;
+    background-origin: padding-box; }
     #queue p {
       margin-bottom: 32px;
       width: 100%;
@@ -277,7 +278,7 @@ footer.light {
     margin-bottom: 32px;
     width: 100%;
     max-width: 540px; } }
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
   #capriza-intro img {
     height: 32px; }
 
@@ -303,11 +304,11 @@ footer.light {
       display: none; }
     #columns-intro .timeline-item {
       padding-bottom: 0px; } }
-  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-device-width: 736px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-device-width: 736px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-device-width: 736px) and (min-resolution: 125dpi), only screen and (max-device-width: 736px) and (min-resolution: 1.3dppx) {
+  @media only screen and (max-width: 736px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 736px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 736px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 736px) and (min-resolution: 125dpi), only screen and (max-width: 736px) and (min-resolution: 1.3dppx) {
     #columns-intro {
       background-image: url("../images/columns-designer@2x.png"); } }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
   #columns-detail {
     background: none;
     padding-bottom: 0; }
@@ -337,6 +338,7 @@ footer.light {
       padding-bottom: 0px; }
 
   #skills {
+    background-origin: padding-box;
     background-position: bottom center;
     background-position-x: -webkit-calc(100% - 8px * 4);
     background-position-x: calc(100% - 8px * 4);
@@ -416,7 +418,7 @@ footer.light {
 article {
   padding-left: 0; }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .timeline-line {
     left: 32px; }
 
@@ -439,8 +441,10 @@ article {
       width: 32px;
       right: auto;
       left: -56px; } }
-@media only screen and (max-device-width: 736px) {
-  #intro .timeline-line {
+@media only screen and (max-width: 736px) {
+  #intro .timeline-line,
+  #previous-experience .timeline-line,
+  #skills .timeline-line {
     height: 100%; }
 
   .timeline-line {
@@ -689,10 +693,10 @@ footer {
   opacity: 0.4;
   font-size: 12px; }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .footer-content-area {
     margin-left: 33px; } }
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
   footer .timeline-line {
     display: none; }
 

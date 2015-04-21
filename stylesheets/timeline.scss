@@ -81,7 +81,7 @@ article {
 	padding-left: 0;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 
 	$timeline-spacing-mobile: $spacing * 4;
 	.timeline-line {
@@ -104,9 +104,11 @@ article {
 	}
 }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
 	
-	#intro {
+	#intro,
+	#previous-experience,
+	#skills {
 		.timeline-line {
 			height: 100%;
 		}

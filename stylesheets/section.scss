@@ -87,10 +87,13 @@ $queue-color: #8DC2C3;
 #queue {
 	height: 657px;
 	background-color: $queue-color;
+	background-position: right bottom;
+	background-origin: content-box;
+	padding-right: $spacing * 4;
 	@include retina-image("../images/queue-screens", 540px 579px, 'png', null, '@2x');
 	background-repeat: no-repeat;
-	background-position-y: bottom;
-	@include calc(background-position-x, '100% - #{$spacing} * 4');
+	// background-position-y: bottom;
+	// @include calc(background-position-x, '100% - #{$spacing} * 4');
 
 	h2 { margin-bottom: $spacing * 4; }
 	p { width: 258px; }
@@ -132,17 +135,20 @@ $carma-color: #5DA5C9;
 
 #skills {
 	background-color: #555;
+	background-position: right center;
+	background-origin: content-box;
+	padding-right: $spacing * 16;
 	@include retina-image("../images/shoes", 314px 100px, 'png', null, '@2x');
 	background-repeat: no-repeat;
-	background-position-y: center;
-	@include calc(background-position-x, '100% - #{$spacing} * 16');
+	// background-position-y: center;
+	// @include calc(background-position-x, '100% - #{$spacing} * 16');
 	p { width: 300px; }
 
 	img:first-child { margin-top: -9px; }
 	img:last-child { margin-top: 3px; }
 }
 
-@media only screen and (max-device-width: 1023px) {
+@media only screen and (max-width: 1023px) {
 	#carma {
 		p { margin-bottom: $spacing * 4; width: auto; max-width: 540px;}
 		padding-bottom: 339px;
@@ -151,7 +157,7 @@ $carma-color: #5DA5C9;
 	}
 }
 
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
 
 	#capriza-designer {
 		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
@@ -164,6 +170,8 @@ $carma-color: #5DA5C9;
 		height: auto;
 		padding-bottom: 579px;
 		background-position-x: $spacing * 8;
+		background-origin: padding-box;
+		// padding-left: $spacing * 8;
 		.video-container {
 			left: 301px;
 		}
@@ -188,9 +196,10 @@ $carma-color: #5DA5C9;
 	#previous-experience {
 		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
 	}
+
 }
 
-@media only screen and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
 
 	#capriza-intro {
 		img { height: 32px; }
@@ -249,6 +258,7 @@ $carma-color: #5DA5C9;
 
 	#skills {
 		.timeline-item { padding-bottom: 0px; }
+		background-origin: padding-box;
 		background-position: bottom center;
 		@include calc(background-position-x, '100% - #{$spacing} * 4');
 		@include calc(background-position-y, '100% - #{$spacing} * 4');
