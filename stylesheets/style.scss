@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
 
 body {
 	font-size: 100%;
@@ -101,11 +102,15 @@ button.button, a.button {
 	}
 }
 
-@media only screen and (max-width: 736px) {
-
+// Use regular Avenir on high dpi devices,
+// Avenir Next is too thin
+@include hidpi {
 	body {
 		font-family: 'Avenir', 'Helvetica Neue', Helvetica, sans-serif;
 	}
+}
+
+@media only screen and (max-width: 736px) {
 
 	h2 {
 		font-size: 18px;

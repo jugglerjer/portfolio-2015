@@ -162,7 +162,10 @@ $carma-color: #5DA5C9;
 	#capriza-designer {
 		p { margin-bottom: $spacing * 4; width: 100%; max-width: 540px;}
 		height: auto;
-		padding-bottom: 758px;
+		.timeline-item { padding-bottom: 0px; }
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 4');
+		// padding-bottom: 758px;
 	}
 
 	#queue {
@@ -175,6 +178,21 @@ $carma-color: #5DA5C9;
 		.video-container {
 			left: 301px;
 		}
+	}
+
+	#columns-intro {
+		img:first-child { height: 20px; }
+		img:last-child {
+			display: none;
+		}
+		
+		.timeline-item { padding-bottom: 0px; }
+
+		@include retina-image("../images/columns-designer", null, 'png', null, '@2x');
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		@include calc(background-size, '100% - #{$spacing} * 2');
+		@include calc(padding-bottom, '100% - #{$spacing} * 12');
 	}
 
 	#columns-detail {
@@ -207,24 +225,25 @@ $carma-color: #5DA5C9;
 	
 	#capriza-designer {
 		.timeline-item { padding-bottom: 0px; }
-		@include calc(background-size, '100% - #{$spacing} * 2');
-		@include calc(padding-bottom, '100% - #{$spacing} * 4');
-	}
-
-	#columns-intro {
-		img:first-child { height: 20px; }
-		img:last-child {
-			display: none;
-		}
-		
 		.timeline-item { padding-bottom: 0px; }
-
-		@include retina-image("../images/columns-designer", null, 'png', null, '@2x');
-		background-repeat: no-repeat;
-		background-position: bottom center;
-		@include calc(background-size, '100% - #{$spacing} * 2');
-		@include calc(padding-bottom, '100% - #{$spacing} * 12');
+		// @include calc(background-size, '100% - #{$spacing} * 2');
+		// @include calc(padding-bottom, '100% - #{$spacing} * 4');
 	}
+
+	// #columns-intro {
+	// 	img:first-child { height: 20px; }
+	// 	img:last-child {
+	// 		display: none;
+	// 	}
+		
+	// 	.timeline-item { padding-bottom: 0px; }
+
+	// 	@include retina-image("../images/columns-designer", null, 'png', null, '@2x');
+	// 	background-repeat: no-repeat;
+	// 	background-position: bottom center;
+	// 	@include calc(background-size, '100% - #{$spacing} * 2');
+	// 	@include calc(padding-bottom, '100% - #{$spacing} * 12');
+	// }
 
 	#columns-detail {
 		.upload-preview-mobile {

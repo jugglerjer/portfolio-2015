@@ -89,7 +89,7 @@ article {
       width: 32px;
       right: auto;
       left: -56px; } }
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 980px) {
   #intro .timeline-line,
   #previous-experience .timeline-line,
   #skills .timeline-line {
