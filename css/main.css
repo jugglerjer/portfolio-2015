@@ -647,7 +647,7 @@ footer {
   margin-left: -57px; }
   .contact-me-button .button {
     padding-left: 40px;
-    text-transform: uppercase; }
+    text-transform: lowercase; }
 
 .contact-me-button-circle {
   height: 48px;
@@ -688,8 +688,18 @@ footer {
   .contact-me-button-circle object {
     cursor: pointer; }
 
+.links {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .twitter {
-  display: block; }
+  display: block;
+  margin-right: 32px; }
 
 .copyright {
   opacity: 0.4;

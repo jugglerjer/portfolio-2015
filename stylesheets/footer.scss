@@ -40,7 +40,7 @@ footer {
 
 	.button {
 		padding-left: $spacing * 5;
-		text-transform: uppercase;
+		text-transform: lowercase;
 	}
 }
 
@@ -69,9 +69,14 @@ footer {
 	}
 }
 
+.links {
+	@include display(flex);
+}
+
 .twitter {
 	// height: 32px;
 	display: block;
+	margin-right: $spacing * 4;
 }
 
 .copyright {
